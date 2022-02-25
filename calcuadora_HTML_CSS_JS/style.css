@@ -1,0 +1,59 @@
+/* Formatação de todos os componentes */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS do fundo da página*/
+.fundo{
+    background-image: linear-gradient(45deg, black, rgb(32, 177, 133)); /* Cor de fundo com degrader */
+    height: 100vh; /* Comando para o fundo cobrir 100% do conteudo */ 
+    color: #fff; /* Cor dos componentes */
+    font-family: arial; /* Comando para mudar a fonte */
+    text-align: center; /* Comando usado para alinhar texto ao centro */
+}
+
+.titulo_no_topo{
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+/* Inicio do CSS da calculadora */
+.calculadora{
+    position: absolute; /* Comando para o componente so ocupar o proprio espaço */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor da calculadora com transpârencia */ 
+
+    /* Têcnica para posicionar algo no meio */ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Comando para mover o eixo X e Y */
+
+    border-radius: 15px; /* Comando para arredondar as bordas */ 
+    padding: 15px; /* Disntacia entre os elementos e as bordas */
+}
+
+#resultado{
+    width: 213px; /* Tamanho da telinha na horizontal */
+    height: 30px; /* Tamanho da telinha na vertical */
+    margin: 5px; /* Tamanho das margens da telinha */
+    font-size: 25px; /* Tamanho da fonte da telinha */
+    color: #000; /* Cor dos números na telinha */
+    text-align: right; /* Alinhamento dos números na telinha*/
+    padding: 5px; /* Distância dos números pra borda da telinha */
+    background-color: #fff; /* Cor da telinha */
+}
+
+.botao{
+    width: 50px; /* Tamanho da largura dos botões */
+    height: 50px; /* Tamanho da altura dos botões */
+    font-size: 25px; /* Tamanho da fonte dos botões */
+    margin: 3px; /* margem entre os botões */
+    cursor: pointer; /* Comando para mudar o curso acima de um botão */ 
+    background-color: rgb(31, 31, 31); /* Cor do botão */
+    border: none; /* Removendo as bordas dos botões */
+    color: #fff; /* Cor para os numero/sinal/letras dos botões */
+}
+
+.botao:hover{
+    background-color: #000; /* Comando para mudar a cor do botão quando o mouse passar por cima dele */ 
+}
